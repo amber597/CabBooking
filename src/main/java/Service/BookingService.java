@@ -18,10 +18,10 @@ public class BookingService {
         ArrayList<Integer> destinationList = new ArrayList<>(Arrays.asList(destination));
         ArrayList<Driver> availableDrivers = this.bookingRepository.findRide(userName, sourceList, destinationList);
         if(availableDrivers.isEmpty()) {
-            System.out.println("No Ride found [Since all the driver are more than  units away from the user]");
+            System.out.println("No Ride found");
         } else {
             for(Driver driver: availableDrivers) {
-                System.out.println(driver.getName() + " [Available]");
+                System.out.println(driver.getName());
             }
         }
         return availableDrivers;
