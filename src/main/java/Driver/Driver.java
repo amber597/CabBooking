@@ -21,7 +21,7 @@ public class Driver {
         BookingService bookingService = new BookingService(bookingRepository);
 
         userService.addUser("Abhishek, M, 23");
-        userService.updateUserLocation("Abhishek", new Integer[]{0,0});
+        userService.updateUserLocation("Abhishek", new Integer[]{0,1});
         userService.addUser("Rahul, M, 29");
         userService.updateUserLocation("Rahul", new Integer[]{10,0});
         userService.addUser("Nandini, F, 22");
